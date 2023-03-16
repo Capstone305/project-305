@@ -1,0 +1,15 @@
+{
+  "name": "project-305",
+  "version": "1.0.0",
+  "description": "Using sensors to collect road user data",
+  "main": "main.js",
+  "repository": "https://github.com/Capstone305/project-305.git",
+  "author": "Capstone Team 305",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^23.1.4"
+  }
+}
