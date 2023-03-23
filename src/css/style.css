@@ -49,6 +49,13 @@ hr {
     border-radius: 25px;
 }
 
+.drag-upload div {
+    position: relative;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
 .options {
     font-weight: 400;
     font-size: 12pt;   
@@ -125,4 +132,8 @@ hr {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     font-size: 16pt;
+}
+
+#upload-icon {
+    width: 25px;
 }
