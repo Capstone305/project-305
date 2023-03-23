@@ -1,0 +1,15 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --main-text: #E3E3F0;
+    --sub-text: #CCCCEF;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(159.66deg, #686876 -7.81%, #3C3B47 105.96%) no-repeat;
+    background-size: cover;
+    color: var(--main-text);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
