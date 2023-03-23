@@ -7,17 +7,33 @@
     </head>
 
     <body>
-        <h1>Hello World!</h1>
+        <h1>Application Name</h1>
         <hr>
 
-        <span class="options">
-            Select all of the micro-mobiles you would like to classify in this video.
-            <li>skateboards</li>
-            <li>bicycles</li>
-            <li>scooters</li>
+        <div class="flex-container">
 
-            <button>Start classifying!</button>
-        </span>
+            <span class="drag-upload">
+                <div>
+                    <p>Upload a file</p>
+                    <!-- TODO: add upload icon -->
+                </div>   
+            </span>
+
+            <span class="options">
+
+                <div class="flex-container-vertical">
+
+                    <p>Select all of the micro-mobiles you would like to classify in this video.</p>
+                    <li>skateboards</li>
+                    <li>bicycles</li>
+                    <li>scooters</li>
+
+                    <button id="classify-button">Start classifying!</button>
+
+                </div>
+            </span>
+
+        </div>
     </body>
 
 </html>
