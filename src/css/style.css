@@ -5,6 +5,7 @@
     --main-text: #E3E3F0;
     --sub-text: #CCCCEF;
     --link-text: #B5B5BD;
+    --greyed-text: #C5C5D2;
     --background-gradient: linear-gradient(159.66deg, #686876 -7.81%, #3C3B47 105.96%);
     --divider-gradient: linear-gradient(90deg, #BFBFCF 0%, #88889A 100%);
     --button-gradient: linear-gradient(109.55deg, #0BA062 15.64%, #6FCB67 96.21%);
@@ -26,6 +27,13 @@ body {
 h1 {
     font-weight: 600;
     font-size: 18pt;
+}
+
+h2 {
+    text-align: center;
+    color: var(--greyed-text);
+    font-weight: 400;
+    font-size: 20px;
 }
 
 hr {
@@ -155,6 +163,12 @@ hr {
     display: block;
     text-align: center;
     padding-top: 20%;
+}
+
+#loading-header {
+    display: block;
+    text-align: center;
+    padding-top: 30%;
 }
 
 #return-link {
