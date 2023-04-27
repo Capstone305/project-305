@@ -60,7 +60,7 @@ hr {
 
 .drag-upload div {
     position: relative;
-    top: 40%;
+    top: 30%;
     width: 100%;
     text-align: center;
 }
@@ -176,4 +176,8 @@ hr {
     color: var(--link-text);
     text-decoration-line: underline;
     text-decoration-color: var(--link-text);
+}
+
+#file-select {
+    text-decoration: underline;
 }
