@@ -44,7 +44,7 @@ app.on('window-all-closed', () => {
             console.log(`stdout: ${stdout}`);
             console.log(`stderr: ${stderr}`);
         });
-        console.log('Closing app.');
+        console.log('Closing app & child processes.');
         app.quit();
     }
 })

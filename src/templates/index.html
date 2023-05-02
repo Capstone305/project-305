@@ -10,48 +10,41 @@
     <body>
         <h1>Application Name</h1>
         <hr>
+        <form action="/processing" method="POST">
+            <div class="flex-container">
+                <span class="drag-upload">
+                    <div>
+                        <p>Drag to upload a file</p>
+                        <img src="../img/upload-icon.svg" alt="Upload icon" id="upload-icon"/>
+                        <p id="file-select">Or select a file</p>
 
-        <div class="flex-container">
-
-            <span class="drag-upload">
-                <div>
-                    <p>Drag to upload a file</p>
-                    <img src="../img/upload-icon.svg" alt="Upload icon" id="upload-icon"/>
-                    <p id="file-select">Or select a file</p>
-
-                    <!-- File upload -->
-                    <form action="/action_page">
+                        <!-- File upload -->
                         <input type="file" id="my-data" name="filename">
-                        <input type="submit">
-                    </form>
+                            
+                    </div>   
+                </span>
 
-                </div>   
-            </span>
-
-            <span class="options">
-
+                <span class="options">
                     <p id="info">Select all of the micro-mobiles you would like to classify in this video.</p>
 
                     <label class="mmb-container">Skateboards
-                        <input type="checkbox">
+                        <input type="checkbox" id="skateboard-check">
                         <span class="checkmark"></span>
                     </label>
 
                     <label class="mmb-container">Bicycles
-                        <input type="checkbox">
+                        <input type="checkbox" id="bicycle-check">
                         <span class="checkmark"></span>
                     </label>
 
                     <label class="mmb-container">Scooters
-                        <input type="checkbox">
+                        <input type="checkbox" id="scooter-check">
                         <span class="checkmark"></span>
                     </label>
 
-                    <a href="download.html"><button class="big-button" id="classify-button">Start classifying!</button></a>
-
-            </span>
-
-        </div>
+                    <button class="big-button" id="submit">Start classifying!</button>
+                    </span>
+            </div>
+        </form>
     </body>
-
 </html>
