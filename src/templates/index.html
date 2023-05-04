@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <title>RoadWise</title>
         <link rel="stylesheet" href="../css/style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="../renderer.js"></script>
     </head>
 
     <body>
-        <h1>Application Name</h1>
+        <h1>RoadWise</h1>
         <hr>
-        <form action="/processing" method="POST">
+        <form action="http://127.0.0.1:5000/submitform" method="POST">
             <div class="flex-container">
                 <span class="drag-upload">
                     <div>
@@ -19,7 +20,7 @@
                         <p id="file-select">Or select a file</p>
 
                         <!-- File upload -->
-                        <input type="file" id="my-data" name="filename">
+                        <input type="file" id="my-data" name="videofile">
                             
                     </div>   
                 </span>
@@ -42,7 +43,7 @@
                         <span class="checkmark"></span>
                     </label>
 
-                    <button class="big-button" id="submit">Start classifying!</button>
+                    <button class="big-button" id="submit" type="submit">Start classifying!</button>
                     </span>
             </div>
         </form>
