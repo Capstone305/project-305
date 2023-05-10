@@ -3,3 +3,8 @@ npm-debug.log
 
 # Dependency directory
 node_modules
+
+arn.py
+
+src/.yarn
+virtual
