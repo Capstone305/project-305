@@ -1,5 +1,7 @@
 from app import *
 
+import string
+
 @app.route("/", methods=["GET"])
 def home():
     '''
@@ -20,7 +22,20 @@ def form_response():
 
     if request.method == 'POST':
         # User has submitted form
-        print("A post request has been submitted.")
+
+        # Get the name of the file
+        file_name = request.form.get("filename")
+        print("The file uploaded is called: " + str(file_name))
+
+        # Get the types of micromobiles to include in the data
+        result_skateboard = request.form.get("skateboard-check")
+        result_bicycle = request.form.get("bicycle-check")
+        result_scooter = request.form.get("scooter-check")
+        print("The selected micromobile types are:")
+        print("Skateboards:\t" + str(result_skateboard))
+        print("Bicycle:\t" + str(result_bicycle))
+        print("Scooter:\t" + str(result_scooter))
+
 
     print("Form response recieved.")
     return render_template("loading.html")
