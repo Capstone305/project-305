@@ -8,3 +8,5 @@ arn.py
 
 src/.yarn
 virtual
+
+__pycache__
