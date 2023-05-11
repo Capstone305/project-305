@@ -5,7 +5,8 @@ import boto3
 
 def start_model(project_arn, model_arn, version_name, min_inference_units):
 
-    client=boto3.client('rekognition')
+    client=boto3.client('rekognition',
+        region_name='us-east-2')
 
     try:
         # Start the model
@@ -21,12 +22,14 @@ def start_model(project_arn, model_arn, version_name, min_inference_units):
         for model in describe_response['ProjectVersionDescriptions']:
             print("Status: " + model['Status'])
             print("Message: " + model['StatusMessage']) 
+            print('Model has successfully been started.')
     except Exception as e:
         print(e)
+        print('Error: Model could not be started.')
         
-    print('Done...')
+    print('Conclude model startup.')
     
-def main():
+def start_mmb_model():
     project_arn='arn:aws:rekognition:us-east-2:418857082272:project/pedestrian_detection_v2/1681510565232'
     model_arn='arn:aws:rekognition:us-east-2:418857082272:project/pedestrian_detection_v2/version/pedestrian_detection_v2.2023-04-20T11.00.54/1682013654262'
     min_inference_units=1 
@@ -34,4 +37,4 @@ def main():
     start_model(project_arn, model_arn, version_name, min_inference_units)
 
 if __name__ == "__main__":
-    main()
+    start_mmb_model()

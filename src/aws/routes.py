@@ -1,4 +1,6 @@
 from app import *
+from aws_model_start import *
+from aws_model_end import *
 
 import string
 
@@ -20,8 +22,8 @@ def form_response():
     # import os
     # print(os.getcwd())
 
+    # When the user presses the submit button:
     if request.method == 'POST':
-        # User has submitted form
 
         # Get the name of the file
         file_name = request.form.get("filename")
@@ -36,6 +38,8 @@ def form_response():
         print("Bicycle:\t" + str(result_bicycle))
         print("Scooter:\t" + str(result_scooter))
 
+        # Starts the AWS Rekognition model
+        start_mmb_model()
 
     print("Form response recieved.")
     return render_template("loading.html")

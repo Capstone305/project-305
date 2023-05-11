@@ -19,12 +19,12 @@ def stop_model(model_arn):
     except Exception as e:  
         print(e)  
 
-    print('Done...')
+    print('Model has successfully been terminated.')
     
-def main():
+def stop_mmb_model():
     
     model_arn='arn:aws:rekognition:us-east-2:418857082272:project/pedestrian_detection_v2/version/pedestrian_detection_v2.2023-04-20T11.00.54/1682013654262'
     stop_model(model_arn)
 
 if __name__ == "__main__":
-    main() 
+    stop_mmb_model() 

@@ -10,3 +10,5 @@ src/.yarn
 virtual
 
 __pycache__
+
+credentials.py
